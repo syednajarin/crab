@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impress Crush❤️</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="paper red">
+<p class="p1">  I Love You So Much ❤️</p>
+<p class="p2">  </p>
+</div>
+
+<div class="paper red">
+<p class="p1"> I Miss You</p>
+<p class="p2"></p>
+</div>
+
+<div class="paper">
+<p class="p1"> I am really sorry ABBA AMMI ❤️ </p>
+ 
+</div>
+
+<div class="paper">
+<p class="p1">Drag the papers to move!</p>
+</div>
+
+<!-- partial -->
+<script>
+  
+  function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  }
+
+  // Dynamically load the appropriate script
+  function loadScript() {
+    const script = document.createElement('script');
+    
+    if (isTouchDevice()) {
+      script.src = './mobile.js'; // Load mobile.js for touch devices
+    } else {
+      script.src = './script.js'; // Load script.js for desktop devices
+    }
+    
+    
+    document.body.appendChild(script);
+  }
+
+  
+  loadScript();
+</script>
+
+</body>
+</html>
